@@ -1,19 +1,4 @@
-# VxTel
-
-- Fullstack implementation of a call timing application.
-- Includes special pricing for customized plans.
-
-## Technologies
-
-- Backend: Node.js 14+, Typescript, MySql, Postgres, Docker
-- Frontend: node.js 13+, React, Docker
-
-## Architecture
-
-- Backend: Hexagonal Microservices
-- Frontend: Monolith
-
-# Backend
+## Backend 
 
 - Core: It concentrates all application logic, also known as domain or logic layer.
   - Repositories: These are the 'ports' of the ports and adapters (hexagonal) architecture. Define interfaces for obtaining data
@@ -31,11 +16,3 @@
 
 - Dockerfile:
   - Using the `npm run prod` command, the application is built, the databases are migrated and the production server is started.
-
-# frontend
-  - Views:
-    - Contains application pages and their style files
-
-  - Components:
-    - Shared:
-      - Contains all components shared between the various views and their style files
